@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Show</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="/bootstrap.min.css" media="screen"/>
+  <link rel="stylesheet" href="/shows.css" media="screen"/>
+  <script src="/editShow.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="page-header" id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+
+
+<!--        <div class="page-head" th:text="${show.title}"></div>-->
+<!--        <div style="width: 100%; margin: auto; text-align: center">-->
+<!--          <a th:href="@{/showEpisodes/{id}(id=${show.showId})}">Downloaded Episodes</a>-->
+<!--        </div>-->
+
+<!--        <form class="form-horizontal edit-show-form" th:action="@{/addShow}" method="post"-->
+<!--              enctype="multipart/form-data">-->
+<!--          <input type="hidden" th:value="${show.showId}" name="showId"/>-->
+<!--          <label>HS URL</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.url}" name="url"/>-->
+<!--          <label>Source</label>-->
+<!--          <select name="sourceName" class="form-control">-->
+<!--            <option th:each="source : ${sourceTypes}" th:text="${source}"-->
+<!--                    th:selected="${source eq show.sourceName}"></option>-->
+<!--          </select>-->
+<!--          <label>Title</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.title}" name="title"/>-->
+<!--          <label>Season</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.season}" name="season"/>-->
+<!--          <label>Folder Name</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.folderName}" name="folderName"/>-->
+<!--          <label>Release Schedule</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.releaseScheduleCron}"-->
+<!--                 name="releaseScheduleCron"/>-->
+<!--          <label>Naming Pattern</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.episodeNamePattern}"-->
+<!--                 name="episodeNamePattern" value="S<SEASON_2>E<EPISODE_2>"/>-->
+<!--          <label>Skip Episodes</label>-->
+<!--          <input type="text" class="form-control" th:value="${show.initialSkipEpisodeString}"-->
+<!--                 name="initialSkipEpisodeString"/>-->
+<!--          <div class="page-head">-->
+<!--            <button type="submit" name="button" style="margin-top: .4em;">保存</button>-->
+<!--          </div>-->
+<!--        </form>-->
+
+<!--        <hr>-->
+<!--        <form th:action="@{/deleteShow/{id}(id=${show.showId})}" th:method="delete">-->
+<!--          <div class="page-head">-->
+<!--            <button type="button" name="button" onclick="confirmDelete(this)">消す</button>-->
+<!--          </div>-->
+<!--        </form>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

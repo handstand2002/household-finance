@@ -1,0 +1,14 @@
+@namespace("org.brokencircuits.householdfinance.balance")
+protocol TransactionProtocol {
+
+  record TransactionMsg {
+    long amountCents;
+    string source;
+    string account;
+    timestamp_ms timestamp;
+  }
+
+  record TransactionMsgKey {
+    string id;
+  }
+}

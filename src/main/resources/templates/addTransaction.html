@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Show</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="/bootstrap.min.css" media="screen"/>
+  <link rel="stylesheet" href="/shows.css" media="screen"/>
+  <script src="/editShow.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="page-header" id="banner">
+    <div class="row">
+      <div class="col-lg-8 col-md-7 col-sm-6">
+        <div class="page-head">Add transaction</div>
+
+        <form class="form-horizontal edit-show-form" th:action="@{/addTransaction}" method="post"
+              enctype="multipart/form-data">
+          <table>
+            <tr>
+              <td>ID</td>
+              <td><input type="text" name="id"/></td>
+            </tr>
+            <tr>
+              <td>Amount</td>
+              <td><input type="text" name="amount"/></td>
+            </tr>
+            <tr>
+              <td>Source</td>
+              <td><input type="text" name="source"/></td>
+            </tr>
+            <tr>
+              <td>Account</td>
+              <td><input type="text" name="account"/></td>
+            </tr>
+          </table>
+
+          <div class="page-head">
+            <button type="submit" name="button" style="margin-top: .4em;">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
